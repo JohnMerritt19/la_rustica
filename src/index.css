@@ -1,15 +1,22 @@
 body {
     background-image: url("./La\ Rustica.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: black;
+    background-position-x: center;  
+    background-position-y: top;
+    background-repeat: no-repeat;
     padding: 0px;
     margin: 0;
+    overflow: auto;
+    overflow-y: scroll;
   }
   h1{
     font-family: 'Times New Roman';
+    text-align: center;
   }
-  h2, p, ul, li {
+  h2, h3, p, ul, li {
+    text-align: center;
     font-family: 'Luxurious Roman', 'cursive';
   }
   ul.header li {
@@ -32,8 +39,10 @@ body {
     display: inline-block;
   }
   .content {
-    background-color: #ffffff78;
+    background-color: #ffffffd8;
     padding: 20px;
+    width: 75%;
+    margin: auto;
   }
   .content h2 {
     padding: 0;
