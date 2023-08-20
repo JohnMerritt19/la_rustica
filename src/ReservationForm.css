@@ -1,0 +1,17 @@
+/* ReservationForm.css */
+.notification {
+    /* Other styles */
+    transition: opacity 0.3s;
+    width: fit-content;
+    z-index: 100;
+  }
+  
+  .success {
+    color: white;
+    background-color: #b70f0f;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  

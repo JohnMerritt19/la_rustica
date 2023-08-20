@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './ReservationForm.css';
 
 const ReservationForm = () => {
   const [name, setName] = useState('');
@@ -7,6 +7,12 @@ const ReservationForm = () => {
   const [date, setDate] = useState('');
   const [partySize, setPartySize] = useState('');
 
+  const [notification, setNotification] = useState({
+    message: '',
+    type: 'success',
+    show: false,
+  });
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Reservation Details:', {
@@ -15,6 +21,13 @@ const ReservationForm = () => {
       date,
       partySize,
     });
+
+    const message = 'Reservation request Received, We will confirm your reservation via phone or email.';
+    const type = 'success';
+
+    setNotification({ message, type, show: true });
+
+
   };
 
   return (
@@ -44,6 +57,9 @@ const ReservationForm = () => {
         </label>
         <button type="submit">Submit</button>
       </form>
+      <div className={`notification ${notification.type}${notification.show ? ' show' : ''}`}>
+        {notification.message}
+      </div>
     </div>
   );
 };
