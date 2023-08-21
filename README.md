@@ -62,8 +62,3 @@ Explore the various sections of the single-page app to observe the dynamic conte
 
 Contributions are welcome! If you find any issues or would like to enhance the project, feel free to submit a pull request. Please adhere to the existing coding style and guidelines.
 
-
-*Note: This README is a template. Customize it to match your project's specific details.*
-```
-
-Remember to replace placeholders like `your-username`, `your-project`, and other relevant details with your actual project information. You can also include additional sections if needed, such as deployment instructions, known issues, or future plans for the project.
